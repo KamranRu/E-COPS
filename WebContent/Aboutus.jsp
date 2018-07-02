@@ -1,0 +1,134 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT USS</title>
+    <link rel="stylesheet" href="Aboutus.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    
+    <div class="team-section">
+      
+      <div class="responsive-bar">
+       
+        <div id="sidebar">
+               
+                <li><a href="home2.jsp"><font color="#b4eb0d"><i class="fa fa-home" aria-hidden="true"></i></font> HOME</a></li>
+		        <li><a href="Aboutus.jsp"><font color="#b4eb0d"><i class="fa fa-usb" aria-hidden="true"></i></font> ABOUT US</a></li><br><br>
+
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+        </div>
+       
+        <br><br>
+        <h1>Our Team</h1>
+        
+        <span class="border"></span>
+        
+        <div class="ps">
+           
+            <a href="#p1"><img src="image/kamran.jpg" alt=""></a>
+            
+            <a href="#p2"><img src="image/aishi.jpg" alt=""></a>
+            
+            <a href="#p3"><img src="image/jamu.jpg" alt=""></a>
+            
+            <a href="#p4"><img src="image/chota.jpg" alt=""></a>
+            
+            <a href="#p5"><img src="image/ab.jpg" alt=""></a>
+            
+        </div>
+        
+        <div class="section" id="p1">
+           
+            <span class="name">Kamran Alam</span>
+            <span class="border"></span>
+            
+            <p>
+                   WORKING AS -     WEB DESIGNER
+                   <br>
+                   Specifications - DESIGNER
+                   <br>
+                   Work on this project - FORT END DESIGNER
+                   <br>
+                   Email - kamranbbsr@gmail.com
+                   <br>
+                   Websit - kamranbbsr.wixsite.com/kamran
+            </p>
+            
+        </div>
+        
+        <div class="section" id="p2">
+           
+            <span class="name">Aishi Bandyopadhyay</span>
+            <span class="border"></span>
+            
+            <p>
+                
+            </p>
+            
+        </div>
+        <div class="section" id="p3">
+           
+            <span class="name">Yajnadatta Barik</span>
+            <span class="border"></span>
+            
+            <p>
+                
+            </p>
+            
+        </div>
+        <div class="section" id="p4">
+           
+            <span class="name">Ashutosh Champati</span>
+            <span class="border"></span>
+            
+            <p>
+                
+            </p>
+            
+        </div>
+        <div class="section" id="p5">
+           
+            <span class="name">Abhishek Pati</span>
+            <span class="border"></span>
+            
+            <p>
+                
+            </p>
+            
+        </div>
+        
+        <img src="image/ecops.jpg" width="320px" height="150px">
+        
+        <div class="full-width">
+            <p class="footer-text">@2018 Designing World. By Kamran Alam</p>
+    </div>
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+
+	</script>
+    
+    
+</body>
+</html>
+    

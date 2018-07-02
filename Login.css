@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(image/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 800px;
+    margin: 100px auto 0;
+    display: table;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.row{
+    margin: 20px 0;
+    transition: .5s;
+}
+.column{
+    background: #000;
+    display: table-cell;
+    padding: 20px;
+    width:44.44444%;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    transition: .5s;
+}
+
+.row:nth-child(1) .column:nth-child(1){
+    background: #596270;
+    
+}
+.row:nth-child(1) .column:nth-child(2){
+    background: #cf6768;
+    
+}
+.row:nth-child(1) .column:nth-child(3){
+    background: #8accc3;
+    
+}
+.responsive-bar{
+    padding: 0;
+    margin: 0;
+    margin-top: -450px;
+}
+.responsive-bar h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding: 3px 10px;
+    background: dodgerblue;
+    float: right;
+    
+}
+.responsive-bar h3 a{
+    color: black;
+    text-decoration: underline;
+}
+.responsive-bar h4 {
+    color: #fff;
+    margin:0;
+    padding: 0;
+    float: right;
+    padding: 5px 10px;
+    background: dodgerblue;
+    text-transform: uppercase;
+}
+.responsive-bar h4 a{
+    color: black;
+    text-decoration: underline;
+}
+
+h2{
+	color: red;
+    text-align: center;
+	font: 50px existence;
+	text-shadow: 0px 0px 10px blue,
+	             0px 0px 20px blue,
+	             0px 0px 30px blue,
+	             0px 0px 40px blue,
+	             0px 0px 50px blue,
+	             0px 0px 60px blue,
+	             0px 0px 70px blue;
+}
+h2:hover{
+	color: black;
+}
+
+@media (max-width: 900px){
+    .container{
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .row{
+        margin: 0;
+    }
+    .responsive-bar{
+        margin: 0;
+        padding: 0;
+    }
+    .h2{
+        margin: 0;
+        padding: 0;
+    }
+    .background-image:{
+        max-width: 100%;
+    }
+}

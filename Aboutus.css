@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background-image: url(image/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 82px;
+    position:relative;
+}
+
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+.responsive-bar{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-290px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+
+li{
+	list-style:none;
+    margin:0px;
+	padding:0px;
+}
+
+li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:2px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+li a:hover{
+  background-color: #0c1cee;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-160px;
+}
+
+#sidebar-btn span:hover{
+    background:chartreuse;
+    
+}
+
+#sidebar-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #0b0b0b;
+	margin: 5px 0px;
+    
+}
+
+
+border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin-bottom: 40px;
+}
+
+.ps{
+    margin-bottom: 40px;
+    
+}
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img{
+    filter: none;
+}
+
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target{
+    height: auto;
+    
+}
+
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.full-width{
+    width: 100%;
+}
+.footer-text{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+@media (max-width: 1239px){
+    .responsive-bar{
+        width: 100%;
+    }
+    
+    .team-section{
+        width: 100%;
+    }
+   
+    .h3{
+        width: 100%;
+    }
+    .h1{
+       margin: 0;
+        padding: 0;
+    
+    }
+    .h4{
+        margin: 0;
+        padding: 0;
+    }
+    .section{
+       width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

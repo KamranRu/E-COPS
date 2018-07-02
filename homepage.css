@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+     background-image: url(image/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    background: black;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+nav h1{
+    margin: 0;
+    float:left;
+    padding: 15px 20px;
+    
+}
+nav h1 a{
+    color: darkorange;
+    text-decoration: underline;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    transition: .5s;
+}
+ul li:hover{
+    background: #e91e63;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    width: 800px;
+    margin: 130px auto 0;
+    display: table;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.row{
+    margin: 20px 0;
+    transition: .5s;
+}
+.column{
+    background: #000;
+    display: table-cell;
+    padding: 20px;
+    width:44.44444%;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    transition: .5s;
+}
+
+.row:nth-child(1) .column:nth-child(1){
+    background: #596270;
+    
+}
+
+.responsive-bar{
+    width: 100%;
+    background: #202c45;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.responsive-bar h3{
+    margin: 0;
+    padding: 3px 0;
+    color: #fff;
+    float: left;
+}
+.responsive-bar h3 a{
+    color: darkorange;
+    text-decoration: underline;
+}
+.responsive-bar h4 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding: 5px 10px;
+    background: #f2184f;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 1200px){
+    nav{
+        display: none;
+    }
+    .responsive-bar{
+        display: block;
+    }
+    nav h1{
+        display: block;
+        float: none;
+    }
+    nav ul{
+        float: none;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        background: #141e33;
+        padding: 15px 20px;
+        border: 1px solid rgba(255,255,255,.1)
+    }
+    h1.logo{
+        display: none;
+    }
+    .container{
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .row{
+        margin: 0;
+    }
+}

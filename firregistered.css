@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: cornflowerblue;
+}
+
+.container{
+    position: relative;
+    width:97%;
+    margin: 0 auto;
+    background-image: url(image/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 46px;
+    box-sizing: border-box;
+    min-height: 550px;
+}
+
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-290px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+
+li{
+	list-style:none;
+    margin:0px;
+	padding:0px;
+}
+
+li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:2px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+li a:hover{
+  background-color: #0c1cee;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-160px;
+}
+
+#sidebar-btn span:hover{
+    background:chartreuse;
+    
+}
+
+#sidebar-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #0b0b0b;
+	margin: 5px 0px;
+    
+}
+
+
+.full-width{
+    width: 100%;
+    
+}
+
+h2{
+   color:currentColor;
+    margin-top: 50px;
+    margin-left: 460px;
+	font: 45px existence;
+	text-shadow: 0px 0px 10px dodgerblue,
+	             0px 0px 20px darkred,
+	             0px 0px 30px darkred,
+	             0px 0px 40px darkred,
+	             0px 0px 50px darkred,
+	             0px 0px 60px darkred,
+	             0px 0px 70px darkred; 
+}
+h3{
+    text-align: center;
+    padding-bottom: 15px;
+    color:blue;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.postal{
+    width: 100%;
+    min-height: 400px;
+    background: rgba(0,0,0,.2);
+}
+
+.footer-text{
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.margin-top20px{
+    margin-top: 20px;
+}
+
+.postal{
+    background: #ccc;
+    padding: 0px;
+    background: rgba(0,0,0,.2);
+}
+
+.responsive-bar{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width:1300px){
+    .container{
+        width: 100%;
+    }
+    .postal{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .tr{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+

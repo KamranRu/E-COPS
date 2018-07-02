@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="user.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+   <div id="main">
+       <div id="tab-btn">
+           <a href="#" class="login active">Sign In</a>
+           <a href="#" class="register">Sign Up</a>
+       </div>
+       <div class="content">
+           <h2>Citizen's Login</h2>
+           <form action="#" method="post" id="login-box">
+           
+           <input type="text" name="username" placeholder="Username" class="inp" required autofocus><br>
+           
+           <input type="password" name="password" placeholder="Password" class="inp" required><br>
+           <a href="#" id="forgot">Forgot Password</a><br>
+           <input type="submit" name="submit" value="SIGN IN" id="sub-btn">
+           </form>
+       </div>
+       <div class="other">
+           <h2>Register With Us</h2>
+           <form action="#" method="post" id="reg-box">
+           
+           <input type="text" name="username" placeholder="Enter Your Username" class="inp" required autofocus><br>
+           
+           <input type="email" name="email" placeholder="Enter your Email" class="inp" required><br></b>
+           
+           <input type="password" name="pass" placeholder="Enter Your Password" class="inp" required><br>
+           
+           <input type="password" name="repass" placeholder="Confirm Your Password" class="inp" required><br>
+           
+           <input type="submit" name="submit" value="SIGN UP" id="sub-btn">
+        </form>
+       </div>
+   </div>
+   
+   <div class="responsive-bar">
+               
+                <h3><a href="homepage.html"><font color="#b4eb0d"><i class="fa fa-home" aria-hidden="true"></i></font> HOME</a></h3>
+                <h4><a href="Login.html"><font color="#b4eb0d"><i class="fa fa-arrow-left" aria-hidden="true"></i></font> BACK</a></h4>
+        
+            </div>
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".register").click(function(){
+            $(".other").show();
+            $(".content").hide();
+            $(".register").addClass('active');
+             $(".login").removeClass('active');
+        });
+         $(".login").click(function(){
+            $(".content").show();
+            $(".other").hide();
+            $(".login").addClass('active');
+             $(".register").removeClass('active');
+        });
+    });
+    </script>
+      
+</body>
+</html>

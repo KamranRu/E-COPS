@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: cornflowerblue;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 97%;
+    margin: 0 auto;
+    background-image: url(image/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 76px;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+.full-width{
+    width: 100%;
+}
+
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-290px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+
+li{
+	list-style:none;
+    margin:0px;
+	padding:0px;
+}
+
+li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:2px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+li a:hover{
+  background-color: #0c1cee;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-160px;
+}
+
+#sidebar-btn span:hover{
+    background:chartreuse;
+    
+}
+
+#sidebar-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #0b0b0b;
+	margin: 5px 0px;
+}
+
+.col-7{
+    width: 55%;
+    min-height: 450px;
+    background: rgba(0,0,0,.6);
+    float: left;
+}
+
+.col-3{
+    width: 30%;
+    min-height: 450px;
+    background: rgba(0,0,0,.6);
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.margin-top20px{
+    margin-top: 20px;
+}
+
+.postal{
+    background: #ccc;
+    padding: 20px;
+    background: rgba(0,0,0,.2);
+}
+
+h1{
+    margin: 10px 0;
+    text-align: center;
+    max-width: 100%;
+}
+h2{
+   color:chartreuse;
+    margin-top: -40px;
+    margin-left: 300px;
+	font: 45px existence;
+	text-shadow: 0px 0px 10px dodgerblue,
+	             0px 0px 20px dodgerblue,
+	             0px 0px 30px dodgerblue,
+	             0px 0px 40px dodgerblue,
+	             0px 0px 50px dodgerblue,
+	             0px 0px 60px dodgerblue,
+	             0px 0px 70px dodgerblue; 
+}
+img{
+    max-width: 100%;
+}
+
+#tab-btn{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.login,.register{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: #37474f;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+}
+.active{
+    background-color: #eee;
+    color: black;
+}
+.content{
+    width: 82%;
+    background-color: black;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.inp{
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 2px solid #888;
+    background-color: #fff;
+    color: #666;
+}
+.inp:focus{
+    outline: none;
+    border: 2px solid #555;
+    border-bottom: 5px solid #555;
+}
+#sub-btn{   
+    width: 50%;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 132px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 3px solid #444;
+}
+
+#forgot{
+    font-size: 20px;
+    color: #fff;
+    
+}
+h3{
+    text-align: center;
+    padding-bottom: 15px;
+    color:blue;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+
+.footer-text{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 1154px){
+    .container{
+        width: 90%;
+    }
+    .col-7,
+    .col-3{
+       width: 100%;
+       float: none;
+    }
+    .col-3{
+        margin-top: 20px;
+    }
+    .content{
+        width: 92%;
+       float: none;
+    }
+    
+}
+
+
+
+
+

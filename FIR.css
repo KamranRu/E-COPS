@@ -1,0 +1,291 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(image/img2.jpg);
+    background-size: cover;
+    background-position: center;
+  height: auto;
+  font-family: 'Roboto';
+    
+}
+
+
+.container{
+   width:75%;
+  height: 2200px;
+  background: rgba(0,0,0,.6);
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-290px;
+	top:0px;
+	transition:left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+
+li{
+	list-style:none;
+    margin:0px;
+	padding:0px;
+}
+
+li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:2px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+li a:hover{
+  background-color: #0c1cee;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-160px;
+}
+
+#sidebar-btn span:hover{
+    background:chartreuse;
+    
+}
+
+#sidebar-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #0b0b0b;
+	margin: 5px 0px;
+}
+
+
+p{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 45px;
+  margin-bottom: 20px;
+  color:crimson;
+}
+
+.full-width{
+    width: 100%;
+    
+}
+
+
+.margin-top20px{
+    margin-top: 60px;
+}
+
+h1{
+	text-align:center;
+	color:floralwhite;
+	font-size:28px;
+	margin-top:26px;
+	position:top;
+}
+.login {
+
+  width: 900px;
+  height: 1980px;
+  position:absolute;
+    background-position: center;
+  top: 10%;
+  left: 25%;
+  margin: -180px 0px 0px -155px;
+  background: rgba(0,0,0,0.9);
+  padding: 20px 30px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.15),inset 0px 1px 0px rgba(255,255,255,0.07);
+}
+
+input{
+ width:250px;
+ height:30px;
+ background: #8a7f7f;
+ border:2px solid #71f3b1;
+}
+.msg .area{
+    width:350px;
+  height: 150px;
+    background: #8a7f7f;
+ border:2px solid #71f3b1;
+}
+
+h2{
+   color:currentColor;
+    margin-top: 50px;
+    margin-left: 460px;
+	font: 45px existence;
+	text-shadow: 0px 0px 10px dodgerblue,
+	             0px 0px 20px darkred,
+	             0px 0px 30px darkred,
+	             0px 0px 40px darkred,
+	             0px 0px 50px darkred,
+	             0px 0px 60px darkred,
+	             0px 0px 70px darkred; 
+}
+
+.form-control text {
+	width:255px;
+  height:34px;
+  background: #8a7f7f;
+  border:2px solid #71f3b1;
+}
+
+.form-control text.option{
+  color: #1604fc;
+}
+
+.form-control {
+	width:254px;
+  height:34px;
+  background: #8a7f7f;
+  border:2px solid #71f3b1;
+}
+input[type="submit"]{
+  position:center;
+  background: darkmagenta;
+  border: 0;
+  width: 254px;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s linear;
+}
+
+input[type="reset"]{
+  position:center;
+  background: darkmagenta;
+  border: 0;
+  width: 254px;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s linear;
+}
+
+.submit:hover{
+    color: darkcyan;
+}
+
+::-webkit-input-placeholder{
+  color: #0e0d0d;
+}
+
+:-ms-input-placeholder{
+  color: #0e0d0d;
+}
+
+::-moz-placeholder{
+   color: #0e0d0d;
+   opacity: 1;
+}
+
+:-moz-placeholder{
+  color: #0e0d0d;
+  opacity: 1;
+}
+#dist{
+    width:210px;
+    height:34px;
+}
+#dist0{
+    width:425px;
+    height:34px;
+}
+#dist1{
+   width:137px;
+   height:34px;
+}
+#dist2{
+    width:210px;
+    height:34px;
+}
+#dist3{
+    width:210px;
+    height:34px;
+}
+#dist4{
+    width:283px;
+    height:34px;
+}
+#dist5{
+    width:283px;
+    height:150px;
+}
+
+
+.footer-text{
+    padding-top:2000px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.responsive-bar{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 900px){
+    .container{
+        width: 100%;
+    }
+   
+    .h2{
+        margin: 0;
+        padding: 0;
+    }
+    .responsive-bar{
+        margin: 0;
+        padding: 0;
+    }
+    .full-width{
+        width: 100%;
+    }
+    .login{
+        width: 100%;
+    }
+    .full-width margin-top20px{
+        width: 100%;
+    }
+    .fieldset{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
